@@ -1,4 +1,4 @@
-const { options } = require('laravel-mix')
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: [
@@ -8,6 +8,13 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    colors: {
+      teal: colors.teal,
+      white: colors.white,
+      gray: colors.trueGray,
+      red: colors.red,
+      purple: colors.purple,
+    },
     extend: {},
   },
   variants: {
